@@ -1,7 +1,7 @@
 /*
     title: target-settings.js
     author: iann#4440
-    description: min dmg, baim cond, avoid insafe cond, etc
+    description: min dmg, baim cond, avoid unsafe cond, etc
 */
 const name = Cheat.GetUsername();
 
