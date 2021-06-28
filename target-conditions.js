@@ -1,3 +1,4 @@
+
 /*
     title: target-settings.js
     author: iann#4440
@@ -14,7 +15,13 @@ const hk_path = ["Config", "SUBTAB_MGR", "Scripts", "SHEET_MGR", "Keys", "JS Key
 const dmgkey = UI.AddHotkey(hk_path, "Damage Override", "Damage Override");
 
 // data
-const weapons = ["Pistol", "Awp", "Auto", "Scout", "Heavy Pistol"];
+const weapons = [
+    "Pistol", 
+    "Awp", 
+    "Auto", 
+    "Scout", 
+    "Heavy Pistol"
+];
 const tabs = UI.AddDropdown(path, "Weapon Category", weapons, 0);
 
 const unsafehb = [], baim = [], dmg = [], noscopehc = [];
@@ -38,13 +45,13 @@ const duplicate = void function()
 {
     for (var x in weapons) 
 	{
-        unsafehb[x] = UI.AddMultiDropdown(path, "[" + weapons[x] + "] Avoid Unsafe Hitboxes", ["Head", "Chest", "Stomach", "Arms", "Legs"], 0);
-        baim[x] = UI.AddMultiDropdown(path, "[" + weapons[x] + "] Baim Conditions", ["Lethal", "Standing", "Crouching", "Slow-walking", "Running", "In-air"], 0);
-        dmg[x] = UI.AddSliderInt(path, "[" + weapons[x] + "] Minimum Damage Override", 0, 100);
+        unsafehb[x]     =   UI.AddMultiDropdown(path, "[" + weapons[x] + "] Avoid Unsafe Hitboxes", ["Head", "Chest", "Stomach", "Arms", "Legs"], 0);
+        baim[x]         =   UI.AddMultiDropdown(path, "[" + weapons[x] + "] Baim Conditions", ["Lethal", "Standing", "Crouching", "Slow-walking", "Running", "In-air"], 0);
+        dmg[x]          =   UI.AddSliderInt    (path, "[" + weapons[x] + "] Minimum Damage Override", 0, 100);
     }
-    noscopehc = UI.AddSliderInt(path, "[" + weapons[2] + "] No-Scope Hitchance", 0, 100);
-    scoutairhc = UI.AddSliderInt(path, "[" + weapons[3] + "] Air Hitchance", 0, 100);
-    r8airhc = UI.AddSliderInt(path, "[" + weapons[4] + "] Air Hitchance", 0, 100);
+    noscopehc           = UI.AddSliderInt       (path, "[" + weapons[2] + "] No-Scope Hitchance", 0, 100);
+    scoutairhc          = UI.AddSliderInt       (path, "[" + weapons[3] + "] Air Hitchance", 0, 100);
+    r8airhc             = UI.AddSliderInt       (path, "[" + weapons[4] + "] Air Hitchance", 0, 100);
 
 }();
 
@@ -385,3 +392,4 @@ const toAvoid = function()
         }
     }
 }
+
