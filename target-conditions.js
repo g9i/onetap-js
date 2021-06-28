@@ -49,9 +49,9 @@ const duplicate = void function()
         baim[x]         =   UI.AddMultiDropdown(path, "[" + weapons[x] + "] Baim Conditions", ["Lethal", "Standing", "Crouching", "Slow-walking", "Running", "In-air"], 0);
         dmg[x]          =   UI.AddSliderInt    (path, "[" + weapons[x] + "] Minimum Damage Override", 0, 100);
     }
-    noscopehc           = UI.AddSliderInt       (path, "[" + weapons[2] + "] No-Scope Hitchance", 0, 100);
-    scoutairhc          = UI.AddSliderInt       (path, "[" + weapons[3] + "] Air Hitchance", 0, 100);
-    r8airhc             = UI.AddSliderInt       (path, "[" + weapons[4] + "] Air Hitchance", 0, 100);
+    noscopehc           =   UI.AddSliderInt    (path, "[" + weapons[2] + "] No-Scope Hitchance", 0, 100);
+    scoutairhc          =   UI.AddSliderInt    (path, "[" + weapons[3] + "] Air Hitchance", 0, 100);
+    r8airhc             =   UI.AddSliderInt    (path, "[" + weapons[4] + "] Air Hitchance", 0, 100);
 
 }();
 
